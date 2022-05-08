@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>首页</h1>
+<p>测试</p>
+<a th:href="@{/test}">测试test</a><br>
+<a th:href="@{/test(username='admin',password=123456)}">测试test->params</a><br>
+<a th:href="@{/testSuccess}">测试testSuccess</a><br>
+<a th:href="@{/testSuccess(username='admin',password=123456)}">测试testSuccess->method、params、headers</a><br>
+<a th:href="@{/test/2/admin}">测试test路径占位符->/test/{id}/{admin}</a><br>
+<h1>********</h1>
+<a th:href="@{/param}">测试param</a>
+</body>
+</html>
